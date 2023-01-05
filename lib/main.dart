@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sneakerstore/screens/home/home_screen.dart';
+import 'package:sneakerstore/screens/welcome/splash_screen.dart';
 import 'package:sneakerstore/shared/shared.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const HomeScreen(),
+      child: const SplashScreen(),
     );
   }
 }
