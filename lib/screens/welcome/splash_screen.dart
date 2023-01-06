@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(
-      const Duration(milliseconds: 5000),
+      const Duration(milliseconds: 3000),
       () => context.pushReplacement(
         const HomeScreen(),
       ),
