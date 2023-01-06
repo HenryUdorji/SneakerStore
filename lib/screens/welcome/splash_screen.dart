@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sneakerstore/screens/home/home_screen.dart';
+import 'package:sneakerstore/screens/welcome/onboarding_screen.dart';
 import 'package:sneakerstore/shared/shared.dart';
 import 'package:sneakerstore/widgets/widgets.dart';
 
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
       const Duration(milliseconds: 3000),
       () => context.pushReplacement(
-        const HomeScreen(),
+        const OnBoardingScreen(),
       ),
     );
     super.initState();
